@@ -6,44 +6,148 @@
 <title>Booky · Tus compras con Apple Pay, anotadas solas</title>
 <meta name="description" content="Booky registra sola cada compra que haces con Apple Pay, la clasifica, la compara con tus presupuestos y, si quieres, la escribe en tu Google Sheets. Dividir la cuenta y cobrar por WhatsApp.">
 <meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Booky · Tus compras con Apple Pay, anotadas solas">
+<meta property="og:description" content="Tus compras con Apple Pay, anotadas solas. Your Apple Pay purchases, logged by themselves. Beta gratis en TestFlight / free beta on TestFlight.">
+<meta property="og:url" content="https://rescobarsv.github.io/booky/">
+<meta property="og:image" content="https://rescobarsv.github.io/booky/icon.png">
+<link rel="icon" type="image/png" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <header><a class="logo" href="./"><span class="mark" aria-hidden="true">₿</span>Booky</a></header>
-  <nav><a href="#es">Español</a><a href="#en">English</a><a href="privacy.html">Privacidad / Privacy</a><a href="#soporte">Soporte / Support</a></nav>
+  <header><a class="logo" href="./"><img class="mark" src="icon.png" width="40" height="40" alt="">Booky</a></header>
+  <nav><a href="#es">Español</a><a href="#en">English</a><a href="#beta">Beta</a><a href="privacy.html">Privacidad / Privacy</a><a href="#soporte">Soporte / Support</a></nav>
 
   <section id="es">
     <h2>Tus compras con Apple Pay, anotadas solas</h2>
-    <p>Booky es una app para iPhone que registra cada compra que haces con Apple Pay sin que escribas nada: la lee del aviso de Wallet, la clasifica y la compara con tus presupuestos del mes. Todo se guarda en tu iPhone.</p>
+    <p>Booky es una app para iPhone que registra cada compra que haces con Apple Pay sin que escribas nada: la toma del toque de tu tarjeta o del aviso de Wallet, la clasifica y la compara con tus presupuestos del mes. Tus compras se guardan en tu iPhone y en tu iCloud; Booky no tiene cuentas propias ni se conecta a tu banco.</p>
+    <p class="cta"><a class="btn" href="https://testflight.apple.com/join/RdPvwjTF">Únete a la beta gratis</a></p>
     <ul>
-      <li><strong>Captura automática.</strong> Una automatización de Atajos (se instala con un toque) pasa el aviso de cada pago a Booky, incluso con el iPhone bloqueado.</li>
+      <li><strong>Captura automática.</strong> Una automatización de Atajos, que configuras una sola vez en tres pasos (permitir los avisos de Booky, si quieres; añadir el atajo y activarla), pasa a Booky tus pagos: el toque de la tarjeta en tienda y el aviso de Wallet, que cubre también las compras en línea, incluso con el iPhone bloqueado.</li>
       <li><strong>Presupuestos por categoría</strong> y un panel del mes.</li>
       <li><strong>Google Sheets.</strong> Si lo conectas, Booky crea una hoja en tu Google Drive y escribe ahí cada compra y cada cambio.</li>
-      <li><strong>Dividir y cobrar.</strong> Reparte una cuenta entre amigos, con propina, y envía a cada uno lo suyo por WhatsApp con tus datos para que te paguen.</li>
+      <li><strong>Dividir y cobrar.</strong> Reparte una cuenta entre amigos, a partes iguales o con montos a mano, y envía a cada uno lo suyo por WhatsApp con tus datos para que te paguen.</li>
     </ul>
     <p class="muted">Requiere iPhone con iOS 17 o posterior; la captura automática requiere iOS 27. Booky no es un banco ni mueve dinero: solo anota.</p>
+    <h3>¿Te llegó un cobro por WhatsApp?</h3>
+    <p>Si el mensaje de un amigo termina en «Dividido con Booky» (o «Split with Booky», si su iPhone está en inglés), usó la app para calcular tu parte de una cuenta y armar el mensaje; lo envió él, desde su WhatsApp. Booky no te cobra ni mueve dinero, y tú no necesitas la app. Si reconoces el cobro, págale a tu amigo por los medios que puso en el mensaje; si no lo reconoces, no pagues y pregúntale a quien te lo mandó. Booky no tiene servidores: tu nombre y tu número solo los guarda tu amigo, en su iPhone y en su iCloud.</p>
   </section>
 
-  <section id="en">
-    <h2>Your Apple Pay purchases, logged by themselves</h2>
-    <p>Booky is an iPhone app that logs every purchase you make with Apple Pay without typing: it reads the Wallet alert, categorizes the purchase and checks it against your monthly budgets. Everything stays on your iPhone.</p>
+  <section id="beta" class="beta">
+    <h2>Únete a la beta</h2>
+    <p>Booky está en beta pública en TestFlight, la app de Apple para probar apps antes de que salgan. Es gratis y, durante la beta, Booky Pro viene desbloqueado.</p>
+    <ol>
+      <li><strong>Instala <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a></strong>, la app de Apple, desde la App Store.</li>
+      <li><strong>Abre el <a href="https://testflight.apple.com/join/RdPvwjTF">enlace de la beta</a></strong> en tu iPhone y sigue los pasos de TestFlight.</li>
+      <li><strong>Abre Booky</strong> y, en Inicio, toca «Activa la captura automática»: son tres pasos, una sola vez.</li>
+    </ol>
+    <p class="cta"><a class="btn" href="https://testflight.apple.com/join/RdPvwjTF">Unirme a la beta</a></p>
+    <h3>Lo que necesitas</h3>
     <ul>
-      <li><strong>Automatic capture.</strong> A Shortcuts automation (installed with one tap) hands each payment alert to Booky, even while the iPhone is locked.</li>
+      <li>Un iPhone: Booky es solo para iPhone.</li>
+      <li>La captura automática necesita iOS 27. Con una versión anterior (la app pide iOS 17 o posterior) funciona todo lo demás, y anotas tus compras a mano con el «+» de Inicio.</li>
+    </ul>
+    <h3>Qué incluye la beta</h3>
+    <p>La captura automática de Apple Pay (iOS 27), anotar compras a mano, categorías y presupuestos, Resumen, Buscar, los widgets, varias monedas, dividir y cobrar por WhatsApp, Google Sheets, la copia en iCloud y exportar CSV, en español y en inglés. <strong>Todavía no están:</strong> la lectura de tickets (la foto del ticket sí se guarda con la compra) e importar CSV (exportar sí).</p>
+    <h3>Cómo mandar comentarios</h3>
+    <ul>
+      <li>Haz una captura de pantalla dentro de Booky, toca la miniatura y elige compartir los comentarios de la beta de TestFlight. Llega sin tu nombre: si quieres que te respondamos, escribe tu correo en el campo de correo de TestFlight, que es opcional. La captura muestra todo lo que haya en pantalla, como montos o comercios.</li>
+      <li>O escribe a <a href="mailto:roesvx@gmail.com">roesvx@gmail.com</a>. En Ajustes → Acerca de, «Sugerir una función» abre un correo a esa dirección.</li>
+    </ul>
+    <p class="muted">Qué datos llegan con un comentario y para qué se usan, en la <a href="privacy.html">política de privacidad</a>.</p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>Your Apple Pay purchases, logged by themselves</h2>
+    <p>Booky is an iPhone app that logs every purchase you make with Apple Pay without typing: it takes it from the tap of your card or from the Wallet alert, categorizes the purchase and checks it against your monthly budgets. Your purchases are stored on your iPhone and in your iCloud; Booky has no accounts of its own and doesn't connect to your bank.</p>
+    <p class="cta"><a class="btn" href="https://testflight.apple.com/join/RdPvwjTF">Join the free beta</a></p>
+    <ul>
+      <li><strong>Automatic capture.</strong> A Shortcuts automation, which you set up once in three steps (allow Booky's notifications, if you like; add the shortcut and turn it on), hands your payments to Booky: the tap of your card in a store and the Wallet alert, which also covers online purchases, even while the iPhone is locked.</li>
       <li><strong>Budgets per category</strong> and a monthly dashboard.</li>
       <li><strong>Google Sheets.</strong> If you connect it, Booky creates a spreadsheet in your Google Drive and writes every purchase and change there.</li>
-      <li><strong>Split and collect.</strong> Split a bill among friends, tip included, and send each person their share over WhatsApp with your payment details.</li>
+      <li><strong>Split and collect.</strong> Split a bill among friends, in equal parts or with amounts you type, and send each person their share over WhatsApp with your payment details.</li>
     </ul>
     <p class="muted">Requires an iPhone running iOS 17 or later; automatic capture requires iOS 27. Booky is not a bank and moves no money: it only keeps the record.</p>
+    <h3>Did you get a payment request on WhatsApp?</h3>
+    <p>If a friend's message ends with "Split with Booky" (or "Dividido con Booky", if their iPhone is in Spanish), they used the app to work out your share of a bill and write the message; they sent it themselves, from their own WhatsApp. Booky doesn't charge you or move any money, and you don't need the app. If you recognize the request, pay your friend using the details they put in the message; if you don't, don't pay, and ask whoever sent it. Booky has no servers: your name and number are kept only by your friend, on their iPhone and in their iCloud.</p>
+  </section>
+
+  <section id="beta-en" class="beta" lang="en">
+    <h2>Join the beta</h2>
+    <p>Booky is in a public beta on TestFlight, Apple's app for trying apps before they are released. It's free, and Booky Pro comes unlocked during the beta.</p>
+    <ol>
+      <li><strong>Install <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight</a></strong>, Apple's app, from the App Store.</li>
+      <li><strong>Open the <a href="https://testflight.apple.com/join/RdPvwjTF">beta link</a></strong> on your iPhone and follow TestFlight's steps.</li>
+      <li><strong>Open Booky</strong> and, on Home, tap "Turn on automatic capture": three steps, just once.</li>
+    </ol>
+    <p class="cta"><a class="btn" href="https://testflight.apple.com/join/RdPvwjTF">Join the beta</a></p>
+    <h3>What you need</h3>
+    <ul>
+      <li>An iPhone: Booky is iPhone only.</li>
+      <li>Automatic capture needs iOS 27. On an earlier version (the app needs iOS 17 or later) everything else works, and you add your purchases by hand with the + on Home.</li>
+    </ul>
+    <h3>What the beta includes</h3>
+    <p>Automatic Apple Pay capture (iOS 27), adding purchases by hand, categories and budgets, Summary, Search, the widgets, multiple currencies, split and collect over WhatsApp, Google Sheets, the iCloud backup and CSV export, in Spanish and English. <strong>Not here yet:</strong> receipt reading (the receipt photo is still saved with the purchase) and CSV import (export is there).</p>
+    <h3>How to send feedback</h3>
+    <ul>
+      <li>Take a screenshot inside Booky, tap the thumbnail and choose to share beta feedback through TestFlight. It arrives without your name: if you want a reply, enter your email in TestFlight's email field, which is optional. The screenshot shows everything on screen, such as amounts or merchants.</li>
+      <li>Or write to <a href="mailto:roesvx@gmail.com">roesvx@gmail.com</a>. In Settings → About, "Suggest a feature" opens an email to that address.</li>
+    </ul>
+    <p class="muted">What data comes with a comment and what it is used for is in the <a href="privacy.html">privacy policy</a>.</p>
   </section>
 
   <section id="soporte">
     <h2>Soporte / Support</h2>
     <p>Escríbenos / Write to us: <a href="mailto:roesvx@gmail.com">roesvx@gmail.com</a></p>
     <p><a href="privacy.html">Política de privacidad / Privacy Policy</a></p>
+
+    <h3>Preguntas frecuentes</h3>
+
+    <h4>¿Por qué la captura automática necesita iOS 27?</h4>
+    <p>Porque se apoya en la automatización «Notificación» de Atajos con Wallet, que llegó con iOS 27. En un iPhone con una versión anterior Booky funciona igual (Inicio, presupuestos, Resumen, dividir y cobrar), pero las compras se anotan a mano con el «+» de Inicio; la app te lo dice en vez de llevarte a armar un atajo que nunca correría. La captura automática es solo para iPhone.</p>
+
+    <h4>Pagué con Apple Pay y la compra no entró sola. ¿Qué reviso?</h4>
+    <ol>
+      <li>Abre Ajustes → Registro de capturas. Cada vez que la automatización llama a Booky queda una línea, también si falla. Si hay una línea gris del momento del pago («No parece una compra (sin monto)» o «Toque sin monto»), la automatización sí corrió, pero el aviso o el toque no trajo un monto, o Booky no encontró el monto o el comercio en el aviso. Si la línea dice «Monto vacío o inválido…» (roja si vino del aviso, gris si vino del toque), el monto llegó en un formato que Booky no entendió. En todos los casos, anota la compra con el «+» y cuéntanos qué dice la línea.</li>
+      <li>Si no hay ninguna línea de ese momento, la automatización no corrió. Abre Atajos, en la pestaña Automatización, y comprueba que «Booky - Apple Pay» siga encendida. Si está apagada, en Ajustes → Configurar Apple Pay toca «Repetir» en el paso 3; si ya no está, en el paso 2.</li>
+      <li>Las compras en línea solo entran por el aviso de Wallet: si tu banco no lo manda, esas no llegan. Los pagos en tienda, con el iPhone o el reloj, entran por el toque de la tarjeta (con el atajo de Booky) aunque no haya aviso.</li>
+    </ol>
+
+    <h4>¿Booky ve mi banco?</h4>
+    <p>No. Booky no se conecta a tu banco. Solo recibe lo que Atajos le pasa: el título, el subtítulo y el texto de cada aviso de Wallet y, de cada toque de una tarjeta o un pase, el comercio, el monto, la moneda, la tarjeta o el pase y el campo «nombre» de la transacción. Tus compras viven en tu iPhone y en tu iCloud, nunca en un servidor de Booky.</p>
+
+    <h4>Cuando termine la beta, ¿qué será de Booky Pro?</h4>
+    <p>Hoy, en el código de Booky, solo dos cosas son de Pro: ponerle presupuesto a más de 3 categorías (gratis tienes 3) y Google Sheets en vivo. Todo lo demás (la captura automática, anotar a mano, las categorías, los widgets, dividir y cobrar, exportar el CSV y la copia en iCloud) no tiene tope. Durante la beta todo viene desbloqueado y no hay nada que pagar. Esta es la lista de hoy: puede cambiar antes de que Booky salga en la App Store.</p>
+
+    <h4>¿Mis datos de la beta pasan a la versión de la App Store?</h4>
+    <p>Sí. La beta de TestFlight y la versión de la tienda son la misma app (el mismo identificador, <code>sv.escobar.booky</code>) y usan la misma base de iCloud (el contenedor de producción), así que tus compras, presupuestos y repartos siguen en tu iCloud, con el mismo Apple ID y la copia en iCloud activa. La versión de la tienda aún no sale, así que no lo hemos probado de punta a punta; si quieres una copia tuya antes, usa Ajustes → Exportar CSV (lleva tus compras y repartos, no los presupuestos ni las fotos).</p>
+
+    <div lang="en">
+    <h3>Frequently asked questions</h3>
+
+    <h4>Why does automatic capture need iOS 27?</h4>
+    <p>Because it relies on the Shortcuts "Notification" automation with Wallet, which arrived with iOS 27. On an earlier iPhone, Booky works the same (Home, budgets, Summary, split and collect), but you add purchases by hand with the + on Home; the app tells you so instead of walking you through a shortcut that would never run. Automatic capture is iPhone only.</p>
+
+    <h4>I paid with Apple Pay and the purchase didn't come in by itself. What do I check?</h4>
+    <ol>
+      <li>Open Settings → Capture log. Every time the automation calls Booky, a line is left there, even when it fails. If there is a gray line from the time of the payment ("Doesn't look like a purchase (no amount)" or "Tap with no amount"), the automation did run, but the alert or the tap carried no amount, or Booky couldn't find the amount or the merchant in the alert. If the line says "Empty or invalid amount…" (red if it came from the alert, gray if it came from the tap), the amount arrived in a format Booky didn't understand. In every case, add the purchase with the + and tell us what the line says.</li>
+      <li>If there is no line from that moment, the automation didn't run. Open Shortcuts, on the Automation tab, and check that "Booky - Apple Pay" is still on. If it's off, go to Settings → Set up Apple Pay and tap "Redo" on step 3; if it's gone, on step 2.</li>
+      <li>Online purchases only come in through the Wallet alert: if your bank doesn't send it, those don't arrive. In-store payments, with the iPhone or the watch, come in through the tap of the card (with Booky's shortcut) even when there is no alert.</li>
+    </ol>
+
+    <h4>Does Booky see my bank?</h4>
+    <p>No. Booky doesn't connect to your bank. It only receives what Shortcuts hands it: the title, subtitle and text of each Wallet alert and, for each tap of a card or pass, the merchant, the amount, the currency, the card or pass and the transaction's "name" field. Your purchases live on your iPhone and in your iCloud, never on a Booky server.</p>
+
+    <h4>After the beta, what will Booky Pro be?</h4>
+    <p>Today, in Booky's code, only two things are Pro: setting a budget on more than 3 categories (you get 3 for free) and live Google Sheets. Everything else (automatic capture, adding purchases by hand, categories, the widgets, split and collect, CSV export and the iCloud backup) has no cap. During the beta everything is unlocked and there is nothing to pay. This is today's list: it may change before Booky reaches the App Store.</p>
+
+    <h4>Does my beta data carry over to the App Store version?</h4>
+    <p>Yes. The TestFlight beta and the store version are the same app (the same identifier, <code>sv.escobar.booky</code>) and use the same iCloud database (the production container), so your purchases, budgets and splits stay in your iCloud, as long as you use the same Apple ID and the iCloud backup is on. The store version isn't out yet, so we haven't tested it end to end; if you want a copy of your own first, use Settings → Export CSV (it has your purchases and splits, not budgets or photos).</p>
+    </div>
   </section>
 
-  <footer>© 2026 escobarsv · Booky. Apple Pay y Wallet son marcas de Apple Inc. Google Sheets y Google Drive son marcas de Google LLC. WhatsApp es marca de Meta Platforms, Inc.</footer>
+  <footer>© 2026 escobarsv · Booky. Apple Pay, Wallet, iPhone, iCloud, TestFlight y App Store son marcas de Apple Inc. Google Sheets y Google Drive son marcas de Google LLC. WhatsApp es marca de Meta Platforms, Inc.</footer>
 </main>
 </body>
 </html>
